@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color:  #ffe100;
+    text-align: center;
+    font-weight: 700;
+}
+
+h3 {
+    color:  #ffe100;
+}
+
+/*CSS Grid*/
+main {
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "dog dog dog"
+    "dog1 dog2 dog3"
+    "cat cat cat"
+    "cat1 cat2 cat3";
+    grid-gap: 10px;
+}
+
+.dogs {
+    grid-area: dog;
+}
+
+.cats {
+    grid-area: cat;
+}
+
+.dog1 {
+    grid-area: dog1;
+}
+
+.dog2 {
+    grid-area: dog2;
+}
+
+.dog3 {
+    grid-area: dog3;
+}
+
+.cat1 {
+    grid-area: cat1;
+}
+
+.cat2 {
+    grid-area: cat2;
+}
+
+.cat3 {
+    grid-area: cat3;
+}
+

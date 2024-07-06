@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+font-family: "Patrick Hand", cursive;
+font-family: "Roboto", sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+        background-color: #ffe100;
+}
+
+header {
+    padding: 10px;
+    background-image: url('pics/banner.png');
+    background-color:  #ffca1c;
+    height: 200px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: 10%;
+}
+
+header h1 {
+    font-family: "Patrick Hand", cursive;
+    color: #faecc3;
+    font-size: 90px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+main {
+    background-color: #0098ff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-left: 10px;
+    gap: 5px;
+}
+
+nav ul li {
+    width: 8%;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    color: #001c2e;
+    border: solid 1px #001c2e;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+nav ul li a:hover {
+    background: #ffca1c;
+    color: #748cac;
+    font-weight: bold;
+}
+
+section {
+    font-family: "Roboto", sans-serif;
+    color:  #001c2e;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section p {
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.intro {
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    color:  #ffe100;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    color:  #ffe100;
+}
+
+footer {
+    background-color: #4ab7ff;
+    color: #001c2e;
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+/*CSS Grid*/
+main {
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "intro intro intro"
+    "title title title"
+    "fact1 fact2 fact3";
+    grid-gap: 10px;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.title {
+    grid-area: title;
+}
+
+.fact-1 {
+    grid-area: fact1;
+}
+
+.fact-2 {
+    grid-area: fact2;
+}
+
+.fact-3 {
+    grid-area: fact3;
+}
+
+
+/*Media query*/
+
+@media only screen and (max-width: 700px) {
+
+    #container main {
+      display:flex;
+      flex-wrap:wrap;
+    } 
+
+}
+
+@media only screen and (max-width: 1069px) {
+    header h1 {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 969px) {
+    header h1 {
+        margin-left: 20px;
+        margin-top: 45px;
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 837px) {
+    header h1 {
+        margin-left: 20px;
+        margin-top: 55px;
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    header h1 {
+        margin-left: 20px;
+        margin-top: 65px;
+        font-size: 60px;
+    }
+    nav ul li {
+        width: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 649px) {
+    header h1 {
+        margin-left: 20px;
+        margin-top: 75px;
+        font-size: 50px;
+    }
+    nav ul li {
+        width: 12%;
+    }
+
+}
+
+@media only screen and (max-width: 553px) {
+    header h1 {
+        margin-left: 20px;
+        margin-top: 85px;
+        font-size: 40px;
+    }
+    nav ul li {
+        width: 14%;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+       nav ul li {
+        width: 16%;
+    }
+
+}
+
+@media only screen and (max-width: 371px) {
+    nav ul li {
+     width: 18%;
+ }
+
+}
+

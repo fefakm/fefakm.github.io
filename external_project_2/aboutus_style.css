@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color:  #ffe100;
+}
+
+
+/*CSS Grid*/
+main {
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "image1 section1 section1"
+    "section2 section2 image2";
+    grid-gap: 10px;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
